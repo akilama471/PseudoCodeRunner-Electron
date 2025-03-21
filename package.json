@@ -1,0 +1,17 @@
+{
+  "name": "pseudo-code-simulator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "electron": "^34.3.0",
+    "monaco-editor": "^0.52.2"
+  }
+}

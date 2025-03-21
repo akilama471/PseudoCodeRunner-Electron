@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Code Simulator</title>
+</head>
+<body>
+    <h1>Pseudo Code Simulator</h1>
+    <div id="editorContainer" style="width: 100%; height: 480px;"></div> <!-- Monaco Editor -->
+
+    <div id="variables">
+        <h3>Variables</h3>
+    </div>    
+
+    <button onclick="runPseudoCode()">Run</button>
+    <button onclick="editor.getAction('editor.action.formatDocument').run()">Format Code</button>
+
+    <div id="output"></div>
+
+    <!-- Load Monaco from local files -->
+    <script>var require = { paths: { 'vs': './public/vs' } };</script>
+    <script src="./public/vs/loader.js"></script>
+    <script src="./public/vs/editor/editor.main.js"></script>
+    
+    <script src="renderer.js"></script>
+</body>
+</html>
